@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# React Router Nav
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To practice utilizing documentation for a React library.
 
-## Available Scripts
+## Learning
 
-In the project directory, you can run:
+In this lab, you will be using the React Router library and its components: `BrowserRouter`, `Routes`, `Route`, and `Link`.
 
-### `npm start`
+- Library documentation
+- React Router
+- `BrowserRouter`, `Routes`, `Route`, and `Link` React Router components.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Achieving
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In this lab, you will create a navigation bar that, when the user clicks on the links, simulates React as a multi-page application. 
 
-### `npm test`
+Your work will result in:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A web page with a navigation bar.
+- When the user clicks links in the navigation bar, it rerenders the page with a different component while simulating the appearance of a multi-page application.
 
-### `npm run build`
+# Procedure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ ] You will need at least four components: App, and three others of your choice.
+- [ ] In `index.js`, reference the following documentation: [React Router v6 Overview](https://reactrouter.com/docs/en/v6/getting-started/overview). In the 'Configuring Routes' code snippet, replicate the nesting syntax of `<BrowserRouter>`, `<Routes>`, and `<Route>`.
+- [ ] In your individual `<Route>`s, you will need to pass two props: `path` and `element`. Path will represent the URL fragment you want that component to be associated with. Element is where you pass in the component.
+```js
+<Route path = "/example" element = {<Example />} />
+```
+- [ ] In App, create your navigation bar. On the same documentation, reference the 'Navigation' section and utilize `<Link>`.
+- [ ] In your individual `<Link>`s, you will need to pass the `to` prop. This prop should match the `path` of the component you want the user to navigate to.
+- [ ] In your three other components, they should: contain unique content to distinguish them from each other, and a `<Link>` that returns the user back to App.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Review
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this lab, you practiced utilizing a React library and understanding documentation. 
 
-### `npm run eject`
+The software should:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Consist of a landing page with a navigation bar.
+- When the user clicks a link in the navigation bar, it simulates navigating to a different page. In reality, React Router is rendering components based on the URL. 
+- Have four components: App and three others of your choice. They should all be visually distinguishable from each other.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Going Further
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Style your landing page: [Frontend Mentor Huddle Landing Page](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). This landing page mock-up is for an imaginary social media application called 'Huddle'. How could you continue the design language of this mock-up on your other components so they all have visual cohesion? You will need the style guide provided in the assets on Frontend Mentor.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**OR**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- In the previously linked documentation, scroll down 'Nested Routes'. See if you can implement them based on the documentation and your own research alone.
