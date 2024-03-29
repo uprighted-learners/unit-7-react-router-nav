@@ -21,13 +21,28 @@ Your work will result in:
 
 # Procedure
 
+## Starting up the React App
+- [ ] Once cloned, install the projects dependencies using `npm install` or `npm i`
+- [ ] Use `npm start` and visit the app on your browser at `localhost:3000`
+
 - [ ] You will need at least four components: App, and three others of your choice.
-- [ ] In `index.js`, reference the following documentation: [React Router v6 Overview](https://reactrouter.com/docs/en/v6/getting-started/overview). In the 'Configuring Routes' code snippet, replicate the nesting syntax of `<BrowserRouter>`, `<Routes>`, and `<Route>`.
+- [ ] Import BroswerRouter using `import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"`
+- [ ] In the return statement in `App.js`, replicate the following nesting syntax of `<BrowserRouter>`, `<Routes>`, and `<Route>`: 
+```js
+    // Wraps your entire application. It enables routing functionality, allowing your application to navigate to different URLs.
+    <BrowserRouter>
+        // Defines the routes of your application. This component holds all the individual route definitions.
+        <Routes>
+            // You'll have multiple Route components nested within the Routes component, each representing a different URL path and the component to render when that path is matched.
+            <Route>
+        </Routes>
+</BrowserRouter>
+```
 - [ ] In your individual `<Route>`s, you will need to pass two props: `path` and `element`. Path will represent the URL fragment you want that component to be associated with. Element is where you pass in the component.
 ```js
 <Route path = "/example" element = {<Example />} />
 ```
-- [ ] In App, create your navigation bar. On the same documentation, reference the 'Navigation' section and utilize `<Link>`.
+- [ ] In App, create your navigation bar. Reference the [React Router Documentation](https://reactrouter.com/en/6.22.3/components/link) to utilize `<Link>`.
 - [ ] In your individual `<Link>`s, you will need to pass the `to` prop. This prop should match the `path` of the component you want the user to navigate to.
 - [ ] In your three other components, they should: contain unique content to distinguish them from each other, and a `<Link>` that returns the user back to App.
 
