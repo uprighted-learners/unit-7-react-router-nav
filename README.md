@@ -4,7 +4,7 @@ To practice utilizing documentation for a React library.
 
 ## Learning
 
-In this lab, you will be using the React Router library and its components: `BrowserRouter`, `Routes`, `Route`, and `Link`.
+In this exercise, you will be using the React Router library and its components: `BrowserRouter`, `Routes`, `Route`, and `Link`.
 
 - Library documentation
 - React Router
@@ -12,7 +12,7 @@ In this lab, you will be using the React Router library and its components: `Bro
 
 ## Achieving
 
-In this lab, you will create a navigation bar that, when the user clicks on the links, simulates React as a multi-page application. 
+In this exercise, you will create a navigation bar that, when the user clicks on the links, simulates React as a multi-page application. 
 
 Your work will result in:
 
@@ -48,7 +48,7 @@ Your work will result in:
 
 # Review
 
-In this lab, you practiced utilizing a React library and understanding documentation. 
+In this exercise, you practiced utilizing a React library and understanding documentation. 
 
 The software should:
 
